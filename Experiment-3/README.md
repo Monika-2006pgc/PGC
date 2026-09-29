@@ -562,29 +562,7 @@ Because the processes communicate through network-connected virtual machines, co
 
 ---
 
-## 13 Screenshots
-
-| No. | Screenshot                | Description                  |
-| --- | ------------------------- | ---------------------------- |
-| 1   | `01_create_vms.png`       | Four Ubuntu VMs              |
-| 2   | `02_hostnames.png`        | Master and Worker hostnames  |
-| 3   | `03_ip_addresses.png`     | IP addresses of all VMs      |
-| 4   | `04_ping_test.png`        | Network connectivity         |
-| 5   | `05_ssh_install.png`      | OpenSSH installation         |
-| 6   | `06_mpi_install.png`      | Open MPI installation        |
-| 7   | `07_mpi_version.png`      | MPI version verification     |
-| 8   | `08_ssh_key.png`          | SSH key generation           |
-| 9   | `09_passwordless_ssh.png` | Passwordless SSH             |
-| 10  | `10_hostfile.png`         | MPI hostfile                 |
-| 11  | `11_mpi_code.png`         | MPI source code              |
-| 12  | `12_mpi_compile.png`      | MPI compilation              |
-| 13  | `13_copy_executable.png`  | Executable copied to Workers |
-| 14  | `14_mpi_result.png`       | MPI execution result         |
-| 15  | `15_mpi_data_flow.png`    | MPI data distribution        |
-
----
-
-## 14 Conclusion
+## 13 Conclusion
 
 The MPI implementation successfully performed distributed matrix multiplication using four MPI processes across one Master VM and three Worker VMs. The reference execution time was 92.979510 seconds compared with 244.12 seconds for the sequential implementation, giving a reference speedup of approximately 2.63×.
 
