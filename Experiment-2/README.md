@@ -274,25 +274,8 @@ Therefore, the computation is performed in parallel instead of using only one CP
 
 ---
 
-## 8 Screenshots
 
-The following screenshots were captured during the experiment:
-
-| No. | Screenshot                | Description                 |
-| --- | ------------------------- | --------------------------- |
-| 1   | `01_enter_wsl.png`        | WSL Ubuntu terminal         |
-| 2   | `02_check_cpus.png`       | Number of available CPUs    |
-| 3   | `03_set_threads.png`      | OpenMP thread configuration |
-| 4   | `04_verify_threads.png`   | Verification of 8 threads   |
-| 5   | `05_create_directory.png` | OpenMP working directory    |
-| 6   | `06_openmp_code.png`      | OpenMP source code          |
-| 7   | `07_compile_openmp.png`   | Successful compilation      |
-| 8   | `08_openmp_result.png`    | OpenMP execution result     |
-| 9   | `09_htop_openmp.png`      | CPU utilization             |
-
----
-
-## 9 Conclusion
+## 8 Conclusion
 
 The OpenMP implementation successfully performed matrix multiplication using 8 CPU threads. The reference execution time was 30.830434 seconds compared with 244.12 seconds for the sequential implementation, resulting in an approximately 7.92× speedup. This demonstrates how OpenMP can improve the performance of computationally intensive tasks by using multiple threads on a shared-memory system.
 
