@@ -89,13 +89,46 @@ The experiment follows a progressive multithreading architecture:
                        Speedup
                            |
                       Efficiency
+
+
+                      parallel_lab/
+
+
+   ```
                       
+│
+├── README.md
+│
+├── Pthreads/
+│   ├── thread1.c
+│   ├── thread2.c
+│   ├── thread_sum.c
+│   ├── race.c
+│   └── mutex.c
+│
+├── OpenMP/
+│   ├── omp1.c
+│   ├── omp_sum.c
+│   ├── omp_race.c
+│   ├── omp_critical.c
+│   └── omp_barrier.c
+│
+├── Performance/
+│   ├── sequential.c
+│   ├── pthread_perf.c
+│   └── omp_perf.c
+│
+├── Screenshots/
+│
+└── Graphs/
+```
+```
 Thread Coordination Concept
 Thread 1 ──┐
 Thread 2 ──┤
 Thread 3 ──┤── Synchronization ──> Continue
 Thread 4 ──┘
-
+```
 Shared data is protected using synchronization mechanisms such as Pthread mutexes and OpenMP critical sections.
 
 ## 4. Execution
