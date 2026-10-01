@@ -99,31 +99,48 @@ Thread 4 ──┘
 Shared data is protected using synchronization mechanisms such as Pthread mutexes and OpenMP critical sections.
 
 ## 4. Execution
-Part A — Pthreads
+
+### Part A — Pthreads
 
 The following programs were implemented:
 
 Program	Purpose
 thread1.c	Create and execute one thread
+
 thread2.c	Create multiple threads
+
 thread_sum.c	Divide array-sum work among threads
+
 race.c	Demonstrate a race condition
+
 mutex.c	Fix the race condition using a mutex
+
 pthread_perf.c	Measure Pthreads performance
-Part B — OpenMP
+
+### Part B — OpenMP
+
 Program	Purpose
+
 omp1.c	Create an OpenMP parallel region
+
 omp_sum.c	Work sharing and reduction
+
 omp_race.c	Demonstrate an OpenMP race condition
+
 omp_critical.c	Synchronize using a critical section
+
 omp_barrier.c	Coordinate threads using a barrier
+
 omp_perf.c	Measure OpenMP performance
-Part C — Performance Analysis
+
+### Part C — Performance Analysis
 
 The same computational workload was executed using:
 
 Sequential execution
+
 Pthreads
+
 OpenMP
 
 The parallel programs were tested using:
@@ -133,57 +150,79 @@ The parallel programs were tested using:
 The following measurements were collected:
 
 Execution time
+
 Speedup
+
 Efficiency
 
 ## 5. Results
-Sequential Baseline
+
+### Sequential Baseline
 
 The measured sequential execution time was:
 
-1.987856 seconds
-Execution Time Comparison
-Threads	Pthreads (s)	OpenMP (s)
-1	1.959201	2.015492
-2	1.225233	1.101542
-4	0.670307	0.645589
-6	0.588161	0.621729
-8	0.489643	0.558282
-12	0.482019	0.407102
-Speedup
+**1.987856 seconds**
+
+### Execution Time Comparison
+
+| Threads | Pthreads (s) | OpenMP (s) |
+|--------:|-------------:|-----------:|
+| 1       | 1.959201     | 2.015492   |
+| 2       | 1.225233     | 1.101542   |
+| 4       | 0.670307     | 0.645589   |
+| 6       | 0.588161     | 0.621729   |
+| 8       | 0.489643     | 0.558282   |
+| 12      | 0.482019     | 0.407102   |
+
+### Speedup
 
 Speedup was calculated using:
 
-Speedup = Sequential Execution Time / Parallel Execution Time
-Threads	Pthreads Speedup	OpenMP Speedup
-1	1.015x	0.986x
-2	1.622x	1.805x
-4	2.966x	3.079x
-6	3.380x	3.197x
-8	4.060x	3.561x
-12	4.124x	4.883x
-Efficiency
+**Speedup = Sequential Execution Time / Parallel Execution Time**
+
+| Threads | Pthreads Speedup | OpenMP Speedup |
+|--------:|-----------------:|---------------:|
+| 1       | 1.015x           | 0.986x         |
+| 2       | 1.622x           | 1.805x         |
+| 4       | 2.966x           | 3.079x         |
+| 6       | 3.380x           | 3.197x         |
+| 8       | 4.060x           | 3.561x         |
+| 12      | 4.124x           | 4.883x         |
+
+### Efficiency
 
 Efficiency was calculated using:
 
-Efficiency = (Speedup / Number of Threads) × 100
-Threads	Pthreads Efficiency	OpenMP Efficiency
-1	101.46%	98.63%
-2	81.12%	90.23%
-4	74.14%	76.98%
-6	56.33%	53.29%
-8	50.75%	44.51%
-12	34.37%	40.69%
-Performance Graphs
-Execution Time vs Number of Threads
+**Efficiency = (Speedup / Number of Threads) × 100**
 
-Speedup vs Number of Threads
+| Threads | Pthreads Efficiency | OpenMP Efficiency |
+|--------:|--------------------:|------------------:|
+| 1       | 101.46%             | 98.63%            |
+| 2       | 81.12%              | 90.23%            |
+| 4       | 74.14%              | 76.98%            |
+| 6       | 56.33%              | 53.29%            |
+| 8       | 50.75%              | 44.51%            |
+| 12      | 34.37%              | 40.69%            |
 
-Efficiency vs Number of Threads
+### Performance Graphs
 
-Result Observation
+#### Execution Time vs Number of Threads
 
-The measured execution time generally decreased as the number of threads increased. The lowest measured execution time was obtained with 12 OpenMP threads, at 0.407102 seconds.
+![Execution Time Graph](Graphs/14_execution_time_graph.png)
+
+#### Speedup vs Number of Threads
+
+![Speedup Graph](Graphs/15_speedup_graph.png)
+
+#### Efficiency vs Number of Threads
+
+![Efficiency Graph](Graphs/16_efficiency_graph.png)
+
+### Result Observation
+
+The measured execution time generally decreased as the number of threads increased.
+
+The lowest measured execution time was obtained with **12 OpenMP threads**, at **0.407102 seconds**.
 
 The results also show that increasing the number of threads does not produce perfectly proportional speedup. Thread management, scheduling, memory access, synchronization, and other system overheads affect parallel performance.
 
