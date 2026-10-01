@@ -279,3 +279,6 @@ Therefore, the computation is performed in parallel instead of using only one CP
 
 The OpenMP implementation successfully performed matrix multiplication using 8 CPU threads. The reference execution time was 30.830434 seconds compared with 244.12 seconds for the sequential implementation, resulting in an approximately 7.92× speedup. This demonstrates how OpenMP can improve the performance of computationally intensive tasks by using multiple threads on a shared-memory system.
 
+## Author
+
+Monika.M.Bhandari
