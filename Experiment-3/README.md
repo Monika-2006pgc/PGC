@@ -568,3 +568,6 @@ The MPI implementation successfully performed distributed matrix multiplication 
 
 MPI demonstrates distributed-memory parallelism where separate processes communicate explicitly using operations such as `MPI_Scatter`, `MPI_Bcast`, and `MPI_Gather`.
 
+## Author
+
+Monika.M.Bhandari
