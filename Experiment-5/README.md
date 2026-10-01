@@ -208,15 +208,15 @@ Efficiency was calculated using:
 
 #### Execution Time vs Number of Threads
 
-![Execution Time Graph](Graphs/14_execution_time_graph.png)
+![Execution Time Graph](14_execution_time_graph.png)
 
 #### Speedup vs Number of Threads
 
-![Speedup Graph](Graphs/15_speedup_graph.png)
+![Speedup Graph](15_speedup_graph.png)
 
 #### Efficiency vs Number of Threads
 
-![Efficiency Graph](Graphs/16_efficiency_graph.png)
+![Efficiency Graph](16_efficiency_graph.png)
 
 ### Result Observation
 
