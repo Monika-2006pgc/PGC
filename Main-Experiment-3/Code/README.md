@@ -1,9 +1,9 @@
 
-## 4. Implementation – Source Code
+##  Implementation – Source Code
 
 This experiment consists of six C programs to demonstrate different synchronization mechanisms and their performance.
 
-### 4.1 Race Condition (race.c)
+### 1 Race Condition (race.c)
 
 Demonstrates multiple threads accessing and modifying a shared counter without synchronization.
 
@@ -24,7 +24,7 @@ int main() {
 }
 ```
 
-### 4.2 Critical Section (critical.c)
+### 2 Critical Section (critical.c)
 
 Uses the OpenMP critical directive to ensure that only one thread accesses the shared counter at a time.
 
@@ -48,7 +48,7 @@ int main() {
 }
 ```
 
-### 4.3 Atomic Operation (atomic.c)
+### 3 Atomic Operation (atomic.c)
 
 Uses the OpenMP atomic directive to perform safe and indivisible updates to a shared counter.
 
@@ -70,7 +70,7 @@ int main() {
 }
 ```
 
-### 4.4 Barrier Synchronization (barrier.c)
+### 4 Barrier Synchronization (barrier.c)
 
 Demonstrates synchronization between threads using an OpenMP barrier.
 
@@ -94,7 +94,7 @@ int main() {
 }
 ```
 
-### 4.5 Semaphore Synchronization (semaphore.c)
+### 5 Semaphore Synchronization (semaphore.c)
 
 Uses POSIX semaphores to control access to shared resources and prevent simultaneous modification of shared data.
 
@@ -134,7 +134,7 @@ int main() {
 }
 ```
 
-### 4.6 Performance Comparison (compare_sync.c)
+### 6 Performance Comparison (compare_sync.c)
 
 Compares four synchronization strategies: No Synchronization, Critical Section, Atomic Operation, and OpenMP Lock. Execution time and correctness are measured using different thread counts.
 
@@ -236,32 +236,3 @@ int main() {
 }
 ```
 
-### Compilation and Execution
-
-Open Ubuntu Terminal and use the following commands:
-
-```bash
-# Race Condition
-gcc race.c -fopenmp -o race
-./race
-
-# Critical Section
-gcc critical.c -fopenmp -o critical
-./critical
-
-# Atomic Operation
-gcc atomic.c -fopenmp -o atomic
-./atomic
-
-# Barrier Synchronization
-gcc barrier.c -fopenmp -o barrier
-./barrier
-
-# Semaphore
-gcc semaphore.c -pthread -o semaphore
-./semaphore
-
-# Performance Comparison
-gcc compare_sync.c -fopenmp -o compare_sync
-./compare_sync
-```
