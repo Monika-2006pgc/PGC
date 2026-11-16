@@ -20,7 +20,7 @@
 ![Adjacent and Padded Memory Layouts](6_Comparison_between_adjacent_and_padded_memory_layouts.jpeg)
 
 ### 7. Execution of NUMA Memory Sweep Using Different Thread Counts
-![NUMA Memory Sweep](7_Etection_of_NUMA_memory_sweep_using_different_threads_count.jpeg)
+![NUMA Memory Sweep](7_Exection_of_NUMA_memory_sweep_using_different_threads_count.jpeg)
 
 ### 8. Comparison of False Sharing and NUMA Memory
 ![False Sharing and NUMA Memory](8_Comparison_of_False_sharing_and_NUMA_memory.jpeg)
