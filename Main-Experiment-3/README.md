@@ -319,6 +319,3 @@ B.E. Computer Science and Artificial Intelligence Engineering
 KLE Technological University, Hubballi
 
 ---
-
-*Experiment: Analyze Synchronization Mechanisms in Parallel Programs*  
-*Course: Parallel Programming / Cloud Computing Lab*
