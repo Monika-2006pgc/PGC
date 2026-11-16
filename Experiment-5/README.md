@@ -1,4 +1,4 @@
-# Experiment-5 : Develop Multithreaded Programs Using Parallel Programming Libraries to Understand Thread Creation, Management, and Coordination
+# Experiment : Develop Multithreaded Programs Using Parallel Programming Libraries to Understand Thread Creation, Management, and Coordination
 
 ## Experiment Overview
 
